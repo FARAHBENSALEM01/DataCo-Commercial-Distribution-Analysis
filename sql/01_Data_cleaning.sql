@@ -138,19 +138,19 @@ Validation confirmed that the following columns contain
 only whole numbers and can be safely converted from
 FLOAT to INT:
 
-• Days for shipping (real)
-• Days for shipment (scheduled)
-• Late_delivery_risk
-• Category Id
-• Customer Id
-• Department Id
-• Order Customer Id
-• Order Id
-• Order Item Cardprod Id
-• Order Item Quantity
-• Product Card Id
-• Product Category Id
-• Product Status
+â€¢ Days for shipping (real)
+â€¢ Days for shipment (scheduled)
+â€¢ Late_delivery_risk
+â€¢ Category Id
+â€¢ Customer Id
+â€¢ Department Id
+â€¢ Order Customer Id
+â€¢ Order Id
+â€¢ Order Item Cardprod Id
+â€¢ Order Item Quantity
+â€¢ Product Card Id
+â€¢ Product Category Id
+â€¢ Product Status
 
 Customer Zipcode will be converted to NVARCHAR because
 ZIP codes are identifiers rather than numeric values.
@@ -408,10 +408,10 @@ FROM DataCo_raw;
 /*
 Findings
 
-• Customer Zipcode contains 3 missing values.
-• Order Zipcode contains 155,679 missing values.
-• Product Description contains only NULL values.
-• No other columns contain missing values.
+â€¢ Customer Zipcode contains 3 missing values.
+â€¢ Order Zipcode contains 155,679 missing values.
+â€¢ Product Description contains only NULL values.
+â€¢ No other columns contain missing values.
 
 Further investigation is required to determine whether
 the missing ZIP codes represent data quality issues or
@@ -791,18 +791,18 @@ WHERE [Benefit per order] <> [Order Profit Per Order]
    OR ([Benefit per order] IS NOT NULL AND [Order Profit Per Order] IS NULL);
 /*
 The redundancy assessment identified identical values across:
-• Customer Id and Order Customer Id
+â€¢ Customer Id and Order Customer Id
 
-• Product Card Id and Order Item Cardprod Id
+â€¢ Product Card Id and Order Item Cardprod Id
 
-• Benefit per order and Order Profit Per Order
+â€¢ Benefit per order and Order Profit Per Order
 
 Decisions:
-• Keep Customer Id as the customer identifier and exclude Order Customer Id from DataCo_Clean.
+â€¢ Keep Customer Id as the customer identifier and exclude Order Customer Id from DataCo_Clean.
 
-• Keep Product Card Id as the product identifier and exclude Order Item Cardprod Id from DataCo_Clean.
+â€¢ Keep Product Card Id as the product identifier and exclude Order Item Cardprod Id from DataCo_Clean.
 
-• Keep Order Profit Per Order as the profit metric because it provides a clearer business interpretation and exclude Benefit per order.
+â€¢ Keep Order Profit Per Order as the profit metric because it provides a clearer business interpretation and exclude Benefit per order.
 
 
 
