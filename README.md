@@ -14,8 +14,8 @@ The project transforms raw transactional data into business insights through dat
 </p>
 
 <p align="center">
-  <img src="PowerBi/Shipping%20Performance.png" width="48%">
   <img src="PowerBi/Customer%20and%20market%20insights.png" width="48%">
+  <img src="PowerBi/Shipping%20Performance.png" width="48%">
 </p>
 
 ---
@@ -319,8 +319,8 @@ Commercial-Distribution-Performance-Analysis/
 │   ├── Commercial Distribution Performance dashboard.pbix
 │   ├── Executive overview.png
 │   ├── Sales and product Performance.png
-│   ├── Shipping Performance.png
-│   └── Customer and market insights.png
+│   ├── Customer and market insights.png
+│   └── Shipping Performance.png
 │
 ├── Reports/
 │   └── Executive Summary.pdf
