@@ -379,11 +379,3 @@ https://github.com/FARAHBENSALEM01
 
 **LinkedIn**  
 https://www.linkedin.com/in/farah-bensalem/
-
----
-
-## If you found this project useful
-
-If you found this project interesting or helpful, consider giving the repository a ⭐ on GitHub.
-
-Feedback and suggestions are always welcome.
