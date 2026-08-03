@@ -2,7 +2,7 @@
 
 DataCo operates a global distribution business across **five markets, more than 20,000 customers, and 180,519 order-line records**. Despite generating positive overall profitability, the company faces operational inefficiencies and hidden commercial risks: more than half of orders arrive late, and approximately one in five transactions generates a loss.
 
-This project investigates where underperformance is concentrated — across products, departments, markets, pricing decisions, and shipping operations — and identifies the areas leadership should prioritize first.
+This project investigates where underperformance is concentrated across products, departments, markets, pricing decisions, and shipping operations and identifies the areas leadership should prioritize first.
 
 Using **SQL Server**, I cleaned and analyzed the dataset, validated business performance indicators, built a **star-schema data model**, and developed a **four-page Power BI dashboard** to support commercial and operational decision-making.
 
