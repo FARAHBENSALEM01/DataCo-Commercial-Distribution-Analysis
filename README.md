@@ -26,7 +26,7 @@ Without this understanding, commercial and operational resources may not be allo
 
 # Business Objective
 
-This project identifies the markets, products, and operational processes that are driving — and limiting — DataCo's performance.
+This project identifies the markets, products, and operational processes that are driving and limiting DataCo's performance.
 
 The analysis translates these findings into prioritized recommendations focused on:
 
