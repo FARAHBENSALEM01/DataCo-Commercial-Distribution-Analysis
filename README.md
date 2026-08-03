@@ -62,13 +62,16 @@ The Power BI dashboard is organized into four business-focused pages:
 
 ## Dashboard Preview
 
-![Executive Overview](https://github.com/FARAHBENSALEM01/Commercial-Distribution-Performance-Analysis/raw/main/PowerBI/Executive%20overview.png)
+<p align="center">
+  <img src="PowerBi/Executive%20overview.png" width="48%">
+  <img src="PowerBi/Sales%20and%20product%20Performance.png" width="48%">
+</p>
 
-![Sales and Product Performance](https://github.com/FARAHBENSALEM01/Commercial-Distribution-Performance-Analysis/raw/main/PowerBI/Sales%20and%20product%20Performance.png)
+<p align="center">
+  <img src="PowerBi/Customer%20and%20market%20insights.png" width="48%">
+  <img src="PowerBi/Shipping%20Performance.png" width="48%">
+</p>
 
-![Customer and Market Insights](https://github.com/FARAHBENSALEM01/Commercial-Distribution-Performance-Analysis/raw/main/PowerBI/Customer%20and%20market%20insights.png)
-
-![Shipping Performance](https://github.com/FARAHBENSALEM01/Commercial-Distribution-Performance-Analysis/raw/main/PowerBI/Shipping%20Performance.png)
 
 ---
 
