@@ -1,101 +1,229 @@
-# Commercial Distribution Performance Analysis
+# Diagnosing Revenue Concentration and Delivery Failures in a Global Distribution Network
 
-An end-to-end SQL and Power BI project analyzing DataCo's global commercial distribution operations to evaluate sales performance, profitability, customer purchasing behavior, product performance, logistics efficiency, pricing strategy, and geographic markets.
+DataCo operates a global distribution business across **five markets, more than 20,000 customers, and 180,519 order-line records**. Despite generating positive overall profitability, the company faces operational inefficiencies and hidden commercial risks: more than half of orders arrive late, and approximately one in five transactions generates a loss.
 
-The project transforms raw transactional data into business insights through data cleaning, exploratory analysis, and interactive visualization, supporting data-driven commercial and operational decision-making.
+This project investigates where underperformance is concentrated — across products, departments, markets, pricing decisions, and shipping operations — and identifies the areas leadership should prioritize first.
 
----
-
-# Dashboard
-
-<p align="center">
-  <img src="PowerBi/Executive%20overview.png" width="48%">
-  <img src="PowerBi/Sales%20and%20product%20Performance.png" width="48%">
-</p>
-
-<p align="center">
-  <img src="PowerBi/Customer%20and%20market%20insights.png" width="48%">
-  <img src="PowerBi/Shipping%20Performance.png" width="48%">
-</p>
-
----
-
-# Interactive Dashboard
-
-🌐 **Power BI Service**
-
-[Open Interactive Dashboard](https://app.powerbi.com/groups/me/reports/56cd5b8a-adf0-4034-b5db-f989c991de1e/03cdbdb9b6e6300d6a93?language=fr-FR&experience=power-bi)
-
----
-
-# 📥 Power BI File
-
-[Commercial Distribution Performance dashboard.pbix](PowerBi/Commercial%20Distribution%20Performance%20dashboard.pbix)
-
----
-
-# Power BI Service Visualization Note
-
-> **Note:** Some Microsoft organizational (work or school) Power BI tenants restrict Bing/Azure Maps services. If the map visual does not render in the published report, dashboard screenshots are included in this repository to provide a complete view of the analysis. The `.pbix` file can also be opened locally using Power BI Desktop to access all visuals and interactions.
+Using **SQL Server**, I cleaned and analyzed the dataset, validated business performance indicators, built a **star-schema data model**, and developed a **four-page Power BI dashboard** to support commercial and operational decision-making.
 
 ---
 
 # Business Problem
 
-DataCo operates a global commercial distribution network across multiple products, customer segments, and geographic markets.
+DataCo operates a complex distribution network across multiple products, customer segments, geographic markets, and shipping methods. However, overall business performance can hide important operational and commercial risks.
 
-Without a clear understanding of the factors influencing sales performance, profitability, logistics operations, and customer purchasing behavior, commercial resources may not be allocated efficiently and operational issues may remain unnoticed.
+The company needs better visibility into:
 
-The company needs to understand:
+- Revenue concentration and dependency on specific products, departments, and markets.
+- The causes behind loss-making transactions despite positive overall profitability.
+- Whether delivery performance is affecting customer experience.
+- Whether discount practices are supporting growth or reducing margins.
+- Whether business performance has improved or stagnated over time.
 
-- Which products, categories, and departments generate the highest business value.
-- Which markets contribute most to sales and profit.
-- Which customer segments drive business performance.
-- Whether logistics operations affect customer experience.
-- How pricing strategies influence sales and profitability.
+Without this understanding, commercial and operational resources may not be allocated effectively.
 
 ---
 
 # Business Objective
 
-Evaluate DataCo's commercial distribution performance by analyzing sales, profitability, customer purchasing behavior, product contribution, logistics operations, pricing strategy, and geographic markets.
+This project identifies the markets, products, and operational processes that are driving — and limiting — DataCo's performance.
 
-The objective is to identify the factors that influence business performance, highlight operational inefficiencies, and provide recommendations that support commercial and operational decision-making.
+The analysis translates these findings into prioritized recommendations focused on:
+
+- Improving delivery performance.
+- Protecting profitability.
+- Reducing commercial concentration risk.
+- Supporting better operational decision-making.
 
 ---
 
 # Business Questions
 
-This project addresses the following business questions:
+The analysis was designed to answer five key questions:
 
-- Which markets contribute the most to sales and profit?
-- Which products, categories, and departments generate the highest business value?
-- Which customer segments contribute most to revenue and profitability?
-- How efficiently are orders delivered across shipping methods and markets?
-- How do discount levels affect sales and profit?
-- Which operational issues have the greatest impact on overall business performance?
+- Which products, departments, and markets contribute most to revenue and profit?
+- What factors are associated with loss-making orders?
+- Which shipping methods and markets experience the highest delivery delays?
+- How do discount levels influence sales and profitability?
 - How have sales and profitability evolved between 2015 and 2018?
+
 ---
 
-# Project Scope
+# Dashboard
 
-This project covers the complete analytics workflow, from raw data preparation to business reporting.
+The Power BI dashboard is organized into four business-focused pages:
 
-The analysis includes:
+| Dashboard Page | Business Question Answered |
+|---|---|
+| Executive Overview | How is the business performing overall? |
+| Sales & Product Performance | Where is revenue concentrated and what drives performance? |
+| Customer & Market Insights | Which customers and markets contribute most? |
+| Shipping Performance | Is logistics affecting customer experience? |
 
-- Cleaning and preparing the DataCo dataset using SQL Server.
-- Performing exploratory data analysis to evaluate business performance.
-- Analyzing sales, profit, products, customers, markets, logistics, and pricing.
-- Building a dimensional data model in Power BI.
-- Developing an interactive dashboard to communicate business performance.
-- Providing business recommendations based on analytical findings.
+## Dashboard Preview
+
+![Executive Overview](https://github.com/FARAHBENSALEM01/Commercial-Distribution-Performance-Analysis/raw/main/PowerBI/Executive%20overview.png)
+
+![Sales and Product Performance](https://github.com/FARAHBENSALEM01/Commercial-Distribution-Performance-Analysis/raw/main/PowerBI/Sales%20and%20product%20Performance.png)
+
+![Customer and Market Insights](https://github.com/FARAHBENSALEM01/Commercial-Distribution-Performance-Analysis/raw/main/PowerBI/Customer%20and%20market%20insights.png)
+
+![Shipping Performance](https://github.com/FARAHBENSALEM01/Commercial-Distribution-Performance-Analysis/raw/main/PowerBI/Shipping%20Performance.png)
+
+---
+
+🌐 **Interactive Dashboard (Power BI Service):**  
+[Open Interactive Dashboard](#)
+
+📥 **Power BI File:**  
+[Commercial Distribution Performance Dashboard.pbix](#)
+
+> Note: Some Microsoft organizational Power BI environments restrict Bing/Azure Maps services. If map visuals do not render in the published dashboard, screenshots are included in this repository and the `.pbix` file can be opened locally in Power BI Desktop.
+
+---
+
+# Methodology
+
+```text
+Business Understanding
+        ↓
+Data Audit
+        ↓
+Data Preparation
+        ↓
+Data Modeling (Star Schema)
+        ↓
+Exploratory Analysis
+        ↓
+Insight Generation
+        ↓
+Business Recommendations
+        ↓
+Dashboard for Decision Support
+```
+
+The analysis started from business questions rather than the dataset itself. SQL and Power BI were used to investigate business performance, identify root causes, and support decision-making.
+
+---
+
+# Key Findings & Business Implications
+
+## Delivery performance is the largest operational challenge
+
+**54.8% of orders were delivered late**, making delivery performance the most significant operational issue identified.
+
+Because Standard Class represents approximately 60% of shipments, the next operational step should be to analyze whether this shipping method disproportionately contributes to delays before redesigning broader fulfillment processes.
+
+---
+
+## Loss-making transactions are hidden behind positive overall performance
+
+Approximately **21.15% of orders generated losses**, despite an overall profit margin of **10.78%**.
+
+This indicates that aggregate profitability is masking a meaningful group of underperforming transactions. Further investigation should focus on:
+
+- Shipping costs
+- Discount levels
+- Product mix
+- Geographic destinations
+
+---
+
+## Revenue concentration creates commercial risk
+
+The **Fan Shop department generates approximately 47% of company sales and profit**, making it DataCo's strongest contributor but also its largest concentration risk.
+
+The **Fishing category contributes approximately 19% of total sales and profit**, reinforcing the need to monitor dependency on a limited number of revenue sources.
+
+---
+
+## Europe is the strongest commercial market
+
+Europe generates the highest sales and profit among the five analyzed markets.
+
+However, before increasing investment specifically in Europe, its performance advantage should be quantified against LATAM and Pacific Asia to determine the scale of the difference.
+
+---
+
+## Moderate discounts appear sustainable
+
+Low and medium discount levels generated approximately:
+
+- **83% of sales**
+- **84% of profit**
+
+This suggests current discount practices are generally supporting performance. Additional analysis of high-discount transactions is required before changing pricing strategy.
+
+---
+
+## Sales and profitability remained relatively flat
+
+Between **2015 and 2018**, sales and profit remained largely stable.
+
+For a distribution business, limited growth over several years should be treated as a signal for further investigation, particularly alongside concentration and operational risks.
+
+---
+
+# Business Recommendations
+
+## Priority 1 — Improve delivery performance
+
+With more than half of orders arriving late, logistics improvement represents the most immediate opportunity.
+
+Recommended actions:
+
+- Analyze late deliveries by shipping method and market.
+- Review warehouse coordination and inventory planning.
+- Investigate whether Standard Class is driving a disproportionate share of delays.
+
+---
+
+## Priority 2 — Investigate loss-making transactions
+
+The loss-making segment should be analyzed separately to identify the main drivers of negative margins.
+
+Focus areas:
+
+- Shipping costs
+- Discounts
+- Product categories
+- Destination markets
+
+---
+
+## Priority 3 — Reduce revenue concentration risk
+
+DataCo should continue developing high-potential departments and categories outside Fan Shop and Fishing to reduce dependency on a limited number of revenue sources.
+
+---
+
+## Priority 4 — Maintain disciplined discount policies
+
+Current discount levels appear sustainable, but high-discount transactions require additional analysis before introducing pricing changes.
+
+---
+
+## Priority 5 — Monitor market concentration
+
+Europe currently leads performance, but investment decisions should be based on quantified differences between markets.
+
+---
+
+# Business Impact
+
+This analysis identifies two structural challenges affecting DataCo:
+
+1. **Operational inefficiency:** More than half of shipments experience delays.
+2. **Commercial concentration risk:** A significant share of performance depends on a limited number of departments and categories.
+
+Addressing these issues provides a data-driven foundation for improving customer experience, protecting profitability, and reducing business risk.
 
 ---
 
 # Dataset
 
 | Attribute | Value |
-|-----------|-------|
+|---|---|
 | Dataset | DataCo Smart Supply Chain for Big Data Analysis |
 | Source | Mendeley Data |
 | Records | 180,519 order-line records |
@@ -109,10 +237,7 @@ The analysis includes:
 | Markets | 5 |
 | Time Period | January 2015 – January 2018 |
 
-Due to GitHub file size limitations, the dataset is not included in this repository.
-
-**Dataset Source**
-
+Dataset source:  
 https://data.mendeley.com/datasets/8gx2fvg2k6/5
 
 ---
@@ -120,202 +245,72 @@ https://data.mendeley.com/datasets/8gx2fvg2k6/5
 # Tools & Technologies
 
 | Category | Technology |
-|-----------|------------|
+|---|---|
 | Database | SQL Server |
 | Query Language | SQL (T-SQL) |
 | Data Cleaning | SQL |
-| Exploratory Data Analysis | SQL |
-| Data Modeling | Power BI |
-| Data Visualization | Power BI |
+| Exploratory Analysis | SQL |
+| Data Modeling | Power BI Star Schema |
+| Visualization | Power BI |
+| Calculations | DAX |
 | Version Control | Git & GitHub |
 | Documentation | Markdown & Microsoft Word |
 
 ---
 
-# Project Workflow
-
-```text
-                 Raw Dataset
-                      │
-                      ▼
-            Data Cleaning (SQL)
-                      │
-                      ▼
-     Exploratory Data Analysis (SQL)
-                      │
-                      ▼
-        Power BI Data Modeling
-                      │
-                      ▼
-      Dashboard Development (Power BI)
-                      │
-                      ▼
-             Business Insights
-                      │
-                      ▼
-        Business Recommendations
-```
-
----
-
-# Dashboard Structure
-
-The dashboard is organized into four business-focused pages.
-
-| Dashboard Page | Business Focus |
-|----------------|----------------|
-| Executive Overview | High-level business performance and key performance indicators |
-| Sales & Product Performance | Product, category, department, and financial performance |
-| Customer & Market Insights | Customer behavior and geographic performance |
-| Shipping Performance | Logistics efficiency, delivery performance, and operational analysis |
----
-
 # SQL Analysis
 
-SQL Server was used throughout the project to prepare the data, validate data quality, and perform exploratory analysis before building the Power BI dashboard.
+SQL Server was used to prepare the data, validate data quality, and perform exploratory analysis.
 
-The SQL workflow consisted of two main stages:
+## Data Cleaning
 
-1. Data Cleaning and Validation
-2. Exploratory Data Analysis (EDA)
+📄 [01_Data_cleaning.sql](sql/01_Data_cleaning.sql)
 
-All SQL scripts are available in the **sql** folder.
+Performed:
 
----
+- Data type standardization
+- Column cleaning
+- Missing value assessment
+- Duplicate validation
+- Data grain verification
 
-# Data Cleaning & Validation
+## Exploratory Analysis
 
-The raw dataset was validated and transformed into an analysis-ready dataset suitable for business analysis and Power BI modeling.
+📄 [02_Exploratory_Data_analysis.sql](sql/02_Exploratory_Data_analysis.sql)
 
-The cleaning process included:
+Analysis areas:
 
-- Standardizing data types.
-- Renaming columns using SQL-friendly naming conventions.
-- Validating the dataset grain at the **Order Item** level.
-- Assessing missing values and redundant attributes.
-- Removing non-analytical columns and duplicate information.
-- Verifying record uniqueness.
-- Creating the final cleaned analytical dataset.
-
-### Data Quality Checks
-
-The cleaning process also included several validation steps to ensure data consistency before analysis:
-
-- Verified duplicate records.
-- Checked missing values across all variables.
-- Validated key identifiers.
-- Assessed unnecessary and low-value attributes.
-- Confirmed date consistency.
-- Verified numerical fields before analysis.
-
-### Output
-
-The result of the cleaning process was a structured analytical dataset used throughout the SQL analysis and Power BI dashboard.
-
-📄 **SQL Script**
-
-[01_Data_cleaning.sql](sql/01_Data_cleaning.sql)
+- Business overview
+- Financial performance
+- Product performance
+- Customer analysis
+- Geographic analysis
+- Logistics performance
+- Business trends
+- Pricing strategy
+- Cross-dimensional analysis
 
 ---
 
-# Exploratory Data Analysis
+# Executive Summary
 
-After data preparation, exploratory analysis was performed using SQL to evaluate commercial performance across financial, operational, customer, product, and logistics dimensions.
+A one-page executive summary presenting the key findings, recommendations, and business impact is available here:
 
-The objective of the analysis was to identify business patterns, performance drivers, and operational issues that could support commercial decision-making.
+📄 [Executive Summary.pdf](Reports/Executive%20Summary.pdf)
 
-📄 **SQL Script**
-
-[02_Exploratory_Data_analysis.sql](sql/02_Exploratory_Data_analysis.sql)
-
----
-
-## Analysis Areas
-
-| Analysis Area | Business Focus |
-|---------------|----------------|
-| Business Overview | Business size, orders, customers, products, countries, and markets |
-| Financial Performance | Sales, profit, profit margin, and loss-making transactions |
-| Product Performance | Product, category, and department contribution |
-| Customer Performance | Customer segments, purchasing behavior, and customer value |
-| Geographic Performance | Market, country, region, and city performance |
-| Logistics Performance | Shipping efficiency and delivery performance |
-| Order Operations | Order status and fulfillment performance |
-| Business Trends | Sales, profit, and order evolution over time |
-| Pricing Strategy | Relationship between discounts and profitability |
-| Customer Purchasing Behavior | Basket size, purchase frequency, and average customer value |
-| Cross-Dimensional Analysis | Relationships between products, customers, markets, and logistics |
----
-
-# Key Findings
-
-The analysis revealed several important patterns across DataCo's commercial distribution operations.
-
-| Business Area | Finding | Business Implication |
-|---------------|----------|----------------------|
-| Overall Performance | DataCo generated **$36.78M** in sales and **$3.97M** in profit between 2015 and 2018. | The business maintained stable commercial activity throughout the analysis period. |
-| Profitability | Overall profit margin reached **10.78%**, while **21.15%** of orders generated losses. | A considerable share of transactions reduced profitability despite positive overall financial performance. |
-| Product Performance | The **Fishing** category contributed approximately **19%** of total sales and profit. | Revenue is concentrated in a limited number of product categories. |
-| Department Performance | The **Fan Shop** department generated nearly **47%** of company sales and profit. | Business performance depends heavily on a single department. |
-| Customer Performance | The **Consumer** segment accounted for approximately **52%** of orders, sales, and profit. | Consumer customers represent the company's primary source of revenue. |
-| Geographic Performance | **Europe** generated the highest sales and profit among all markets. | Europe represents the company's strongest commercial market. |
-| Logistics Performance | **54.8%** of all orders were delivered late. | Delivery delays represent the most significant operational issue identified in the analysis. |
-| Shipping Operations | **Standard Class** accounted for approximately **60%** of all shipments. | Most logistics activity relies on a single shipping method. |
-| Order Fulfillment | A relatively small proportion of orders reached the **Complete** status. | The fulfillment process presents opportunities for operational improvement. |
-| Pricing Strategy | Low and medium discount levels generated approximately **83%** of sales and **84%** of profit. | Moderate discounting supported sales while preserving profitability. |
-| Business Trends | Sales and profit remained relatively stable throughout the three-year period. | No major long-term growth or decline was observed during the analysis period. |
-
----
-
-# Business Recommendations
-
-Based on the analytical findings, the following actions could improve commercial and operational performance.
-
-### 1. Improve Delivery Performance
-
-More than half of all orders were delivered late. Reviewing warehouse coordination, inventory planning, and carrier performance may reduce delivery delays and improve customer satisfaction.
-
----
-
-### 2. Diversify Product Revenue
-
-Sales and profit are highly concentrated in the **Fishing** category and the **Fan Shop** department. Expanding the contribution of other high-potential product categories would reduce commercial dependence on a limited product portfolio.
-
----
-
-### 3. Investigate Loss-Making Transactions
-
-Approximately one-fifth of all orders generated negative profit. Analyzing shipping costs, discount levels, destinations, and product mix would help identify the factors contributing to these losses.
-
----
-
-### 4. Strengthen High-Performing Markets
-
-Europe consistently generated the strongest commercial performance, while LATAM and Pacific Asia also delivered significant revenue. Maintaining investment in these markets while improving lower-performing regions could support balanced business growth.
-
----
-
-### 5. Maintain Disciplined Discount Policies
-
-Most revenue and profit were generated under low-to-moderate discount levels. Maintaining controlled discount strategies may protect profit margins while sustaining sales performance.
-
----
-
-### 6. Improve Order Fulfillment Efficiency
-
-Reducing the number of pending and processing orders could shorten fulfillment times, improve customer experience, and accelerate revenue realization.
 ---
 
 # Repository Structure
 
 ```text
 Commercial-Distribution-Performance-Analysis/
+
 │
 ├── sql/
 │   ├── 01_Data_cleaning.sql
 │   └── 02_Exploratory_Data_analysis.sql
 │
-├── PowerBi/
+├── PowerBI/
 │   ├── Commercial Distribution Performance dashboard.pbix
 │   ├── Executive overview.png
 │   ├── Sales and product Performance.png
@@ -330,52 +325,37 @@ Commercial-Distribution-Performance-Analysis/
 
 ---
 
-# Executive Summary
-
-A detailed report summarizing the project methodology, analytical approach, key findings, and business recommendations is available below.
-
-📄 **Executive Summary**
-
-[Executive Summary.pdf](Reports/Executive%20Summary.pdf)
-
----
-
 # Future Improvements
 
-This project can be extended in several ways to support more advanced business analytics.
-
-Possible improvements include:
-
-- Forecast future sales and profit using time-series models.
-- Develop customer segmentation using clustering techniques.
-- Build predictive models to identify orders at risk of delivery delays.
-- Automate the SQL–Power BI reporting workflow using Python.
-- Integrate near real-time operational monitoring dashboards.
+- Analyze late deliveries by shipping method and market.
+- Quantify performance differences between Europe, LATAM, and Pacific Asia.
+- Analyze high-discount transactions to identify pricing thresholds.
+- Measure fulfillment cycle time and delayed order stages.
+- Forecast future sales and profitability using time-series models.
+- Develop predictive models for delivery delay risk.
+- Automate SQL-to-Power BI reporting workflows using Python.
 
 ---
 
 # Key Skills Demonstrated
 
-This project demonstrates practical experience in:
-
 - SQL data cleaning and validation
 - Exploratory data analysis (EDA)
-- Business performance analysis
-- Star schema data modeling
+- Star-schema data modeling
 - DAX measure development
-- Interactive dashboard design
-- Business storytelling
-- Executive reporting
-- Git and GitHub project documentation
+- Commercial performance analysis
+- Root-cause investigation
+- Business intelligence dashboard development
+- Executive reporting and storytelling
+- GitHub documentation
 
 ---
 
 # Author
 
-**Farah Bensalem**
+**Farah Bensalem**  
+PhD in Econometrics | Data Analyst | Business Intelligence
 
-**GitHub**  
-https://github.com/FARAHBENSALEM01
+GitHub: https://github.com/FARAHBENSALEM01
 
-**LinkedIn**  
-https://www.linkedin.com/in/farah-bensalem/
+LinkedIn: https://www.linkedin.com/in/farah-bensalem/
