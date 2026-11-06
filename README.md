@@ -169,46 +169,33 @@ For a distribution business, limited growth over several years should be treated
 
 # Business Recommendations
 
-## Priority 1 — Improve delivery performance
+## Priority 1 — Improve delivery reliability
 
-With more than half of orders arriving late, logistics improvement represents the most immediate opportunity.
-
-Recommended actions:
-
-- Analyze late deliveries by shipping method and market.
-- Review warehouse coordination and inventory planning.
-- Investigate whether Standard Class is driving a disproportionate share of delays.
+With 54.8% of orders arriving late, DataCo should prioritize improving fulfillment coordination and delivery planning, particularly across high-volume shipping methods. Corrective measures should focus on the markets and shipping methods with the highest delay rates to reduce delivery failures, improve customer experience, and protect customer retention.
 
 ---
 
-## Priority 2 — Investigate loss-making transactions
+## Priority 2 — Protect transaction profitability
 
-The loss-making segment should be analyzed separately to identify the main drivers of negative margins.
-
-Focus areas:
-
-- Shipping costs
-- Discounts
-- Product categories
-- Destination markets
+With 21.15% of analyzed records generating losses, DataCo should introduce targeted profitability controls for underperforming transactions. Reviewing the impact of shipping costs, discounts, product mix, and destination markets would help prevent unprofitable sales from eroding overall profitability.
 
 ---
 
-## Priority 3 — Reduce revenue concentration risk
+## Priority 3 — Diversify revenue sources
 
-DataCo should continue developing high-potential departments and categories outside Fan Shop and Fishing to reduce dependency on a limited number of revenue sources.
-
----
-
-## Priority 4 — Maintain disciplined discount policies
-
-Current discount levels appear sustainable, but high-discount transactions require additional analysis before introducing pricing changes.
+With Fan Shop contributing approximately 47% of sales and profit, DataCo should develop promising departments and categories beyond its dominant revenue sources while maintaining the performance of its leading segments. This would reduce commercial dependency and strengthen the company's resilience to changes in demand.
 
 ---
 
-## Priority 5 — Monitor market concentration
+## Priority 4 — Strengthen discount discipline
 
-Europe currently leads performance, but investment decisions should be based on quantified differences between markets.
+Since low and medium discount levels account for most sales and profit, DataCo should preserve disciplined pricing while reassessing high-discount transactions that may weaken margins. This would help protect profitability without unnecessarily restricting discounting as a commercial tool.
+
+---
+
+## Priority 5 — Allocate resources toward profitable markets
+
+Although Europe leads sales and profit, DataCo should prioritize market opportunities based on profitability and growth potential rather than revenue alone. This would support more effective resource allocation and help direct commercial investment toward sustainable growth opportunities.
 
 ---
 
